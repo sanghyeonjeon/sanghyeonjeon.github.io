@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+   
+    <head>
+       <title>INTRODUCE PAGE</title>
+       <meta charset="utf-8">
+       <link rel="stylesheet" href="./main.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+</script>
+    </head>
+    
+    <body>
+        <!-- header 부분 -->
+       <header id="header">
+          
+           <div class="menu_bar">
+               <ul>
+                   <li><a href="#home">HOME</a></li>
+                   <li><a href="#basic">BASIC</a></li>
+                   <li><a href="#hobby">HOBBY</a></li>
+                   <li><a href="#contact">CONTACT</a></li>
+               </ul>
+           </div>
+           
+           <div class="title" id="home">
+               <h1>Jeon Sang Hyeon</h1>
+               <p>Likelion PNU 6th</p>
+           </div>
+           
+       </header>
+       
+       
+       <div id="wrapper"> 
+           
+            <!-- 본문 내용 부분 -->
+           <article>
+                <section id="basic">
+                    <div class="profile_photo">
+                    </div>
+                    <h2>Basic Information</h2>
+                    <p>Name&nbsp;&nbsp;_&nbsp;&nbsp;Jeon Sang Hyeon</p>
+                    <p>Birthday&nbsp;&nbsp;_&nbsp;&nbsp;1991. 02. 10.</p>
+						<p>Mobile&nbsp;&nbsp;_&nbsp;&nbsp;010 9968 9121</p>
+                     <i class="gem outline icon"></i>
+                </section>
+                
+                <section id="actions">
+                    <div class="content" id="hobby">
+                      <div class="content_img photo3">
+                          <p>basketball</p>
+                      </div>              
+                      <div class="content_article">
+                          <p>
+                            생자대컵 3:3 농구대회
+                          </p>
+                      </div>
+                      <div class="likeButton">
+                          <i class="heart outline icon like"></i>
+                      </div>
+                    </div>
+
+                    <div class="content right">
+                      <div class="content_img photo3-1">
+                          <p>soccer</p>
+                      </div>              
+                      <div class="content_article">
+                          <p>
+                            IT응용공학과 축구팀 ( 2016 )
+                          </p>
+                      </div>
+                      <div class="likeButton">
+                          <i class="heart outline icon like"></i>
+                      </div>
+                    </div>
+                </section>
+                
+                <section id="actions">
+                    <div class="content">
+                      <div class="content_img photo1">
+                          <p>construction</p>
+                      </div>              
+                      <div class="content_article">
+                          <p>
+                            옥상 방수공사
+                          </p>
+                      </div>
+                      <div class="likeButton">
+                          <i class="heart outline icon like"></i>
+                      </div>
+                    </div>
+
+                    <div class="content right">
+                      <div class="content_img photo1-1">
+                          <p>watching sports</p>
+                      </div>              
+                      <div class="content_article">
+                          <p>
+                              k리그 직관 ( 포항 vs 전북 )
+                          </p>
+                      </div>
+                      <div class="likeButton">
+                          <i class="heart outline icon like"></i>
+                      </div>
+                    </div>
+                </section>
+                
+                <section id="actions">
+                    <div class="content">
+                      <div class="content_img photo2">
+                          <p>visiting country</p>
+                      </div>              
+                      <div class="content_article">
+                          <p>
+                            마음의 안식처
+                          </p>
+                      </div>
+                      <div class="likeButton">
+                          <i class="heart outline icon like"></i>
+                      </div>
+                    </div>
+
+                    <div class="content right">
+                      <div class="content_img photo2-1">
+                          <p>climbing</p>
+                      </div>              
+                      <div class="content_article">
+                          <p>
+                            자유를 향하여
+                          </p>
+                      </div>
+                      <div class="likeButton">
+                          <i class="heart outline icon like"></i>
+                      </div>
+                    </div>
+                </section>
+           </article>
+           
+           <article id="contact">
+               <section id="basic">
+                   <p id="email">westlife19@naver.com</p>
+                   <a href="http://www.naver.com"><i class="envelope outline icon"></i></a>
+               </section>
+           </article>
+
+
+            <!-- footer 부분-->
+           <footer>
+               <div class="underline"></div>
+               <div class="footer">
+                   <ul class="icons">
+							<li><i class="twitter icon"></i></li>
+							<li><i class="facebook icon"></i></li>
+							<li><i class="instagram icon"></i></li>
+							<li><i class="linkedin icon"></i></li>
+							<li><i class="github icon"></i></li>
+				   </ul>
+                   <p class="copyright">&copy; Copyright&nbsp;&nbsp;_&nbsp;&nbsp;JSH since 1991</p>
+               </div>
+               
+           </footer>
+            
+       </div>
+       
+       
+       
+
+    </body>
+    
+</html>

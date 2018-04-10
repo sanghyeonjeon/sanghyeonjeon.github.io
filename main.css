@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One|Poiret+One|Quattrocento+Sans|Nanum+Gothic+Coding");
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*header*/
+
+#header
+{
+    color: white;
+    height: 650px;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* header menu_bar */
+#header .menu_bar
+{
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    z-index: 999;
+    opacity: 0.8;
+    background-color: black;
+}
+
+#header .menu_bar ul
+{
+    margin: 0 auto;
+    padding-right: 8%;
+    text-align: right;
+    min-width: 450px;
+}
+
+#header .menu_bar li
+{
+    display: inline-block;
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 9.5pt;
+}
+
+#header .menu_bar li a
+{
+    color: white;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+}
+
+#header .menu_bar li a:hover
+{
+    color: #666;
+}
+
+
+/* header title */
+#header .title
+{
+    height: 650px;
+    margin: 0px auto;
+    padding: 300px 0 0px 0;
+    text-align: center;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0.5px rgba(0, 0, 0, 0.4);
+}
+
+
+#header .title h1
+{
+    font-size: 3.5em;
+    padding: 0 0.5em;
+    font-weight: bold;
+    font-family: "Poiret One";
+    text-transform: capitalize;
+    letter-spacing: 0.6rem;
+}
+
+#header .title p
+{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+    font-size: 1em;
+    padding: 0.7em 1.25em;
+    margin: 0 auto;
+}
+
+
+/* article, footer */
+#wrapper
+{
+    background-color: #f0f0f0;
+}
+
+article, footer
+{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+
+/* 본문 내용 */
+
+article
+{
+    padding: 100px 0;
+}
+
+
+/* basic information */
+article #basic
+{
+    background-color: white;
+    border-radius: 5px;
+    
+    padding: 80px;
+    margin-bottom: 120px;
+    
+    text-align: center;
+}
+
+article #basic .profile_photo
+{
+    width: 130px;
+    height: 130px;
+    
+    margin: 0 auto;
+
+    border-radius: 75px;
+    
+    background-image: url(images/basic.jpg);
+    background-size: cover;
+    
+    box-shadow: 0px 0px 8px 0.5px rgba(0, 0, 0, 0.4);
+}
+
+article #basic h2
+{
+    font-size: 22pt;
+    font-family: "Quattrocento Sans";
+    color: #555;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+article #basic p
+{
+    font-family: "Julius Sans One";
+    font-size: 10pt;
+    color: #555;
+    padding: 10px 0;
+}
+
+article #basic i
+{
+    margin-top: 30px;
+    font-size: 15pt;
+    color: #444;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+article #basic i:hover
+{
+    color: lightpink;
+}
+
+
+
+
+/* actions */
+#actions
+{
+    display: inline-flex;
+}
+
+div.content
+{
+    width: 492px;
+    margin: 20px 20px 20px 0;
+}
+
+div.right
+{
+    width: 492px;
+    margin: 20px 0 20px 20px;
+}
+
+/* content 사진 있는 div */
+.content .content_img
+{
+    height: 300px;
+    background-color: dodgerblue;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0.1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    
+}
+
+.content .content_img:hover
+{
+    transform: scale(1.02);
+    opacity: 0.9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0.2px rgba(0, 0, 0, 0.2);
+}
+
+.content .content_img p
+{
+    text-align: center;
+    line-height: 300px;
+    color: white;
+    font-size: 20pt;
+    font-family: "Poiret One";
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+/* content 글 있는 div */
+.content .content_article
+{
+    background-color: white;
+    height: 150px;
+    padding: 50px;
+    
+}
+
+.content .content_article p
+{
+    text-align: center;
+    color: #666;
+    font-size: 11pt;
+    font-family: "Nanum Gothic Coding";
+    line-height: 30px;
+}
+
+.content .likeButton
+{
+    color: #444;
+    height: 50px;
+    text-align: center;
+    font-size: 18pt;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.content .like
+{
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.content .like:hover
+{
+    color: red;
+}
+
+.photo1
+{
+    background-image: url(images/photo1.jpg);
+    background-size: cover;
+}
+
+.photo1-1
+{
+     background-image: url(images/photo1-1.jpg);
+    background-size: cover;
+}
+
+.photo2
+{
+    background-image: url(images/photo2.jpg);
+    background-size: cover;
+}
+
+.photo2-1
+{
+     background-image: url(images/photo2-1.jpg);
+    background-size: cover;
+}
+
+.photo3
+{
+    background-image: url(images/photo3.jpg);
+    background-size: cover;
+}
+
+.photo3-1
+{
+    background-image: url(images/photo3-1.jpg);
+    background-size: cover;
+}
+
+
+/* 본문 마무리 contact 부분 */
+p#email
+{
+    font-family: "Quattrocento Sans"!important;
+    font-size: 14pt!important;
+    letter-spacing: 7px;
+}
+
+
+
+/* footer */
+footer
+{
+    padding-bottom: 100px;
+}
+div.underline
+{
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid #444;
+}
+
+div.footer
+{
+    margin: 100px auto 50px auto;
+    text-align: center;
+}
+
+div.footer ul.icons
+{
+    list-style: none;
+}
+
+div.footer ul.icons li
+{
+    display: inline-block;
+    margin: 5px;
+    font-size: 15pt;
+    cursor: pointer;
+    transition: all 1s ease;
+    color: #666;
+}
+
+div.footer ul.icons li:hover
+{
+    color: pink;
+}
+
+div.footer p
+{
+    font-family: "Quattrocento Sans";
+    letter-spacing: 3px;
+    font-size: 10pt;
+    color: #555;
+    padding: 10px 0;
+    margin-top: 60px;
+}
